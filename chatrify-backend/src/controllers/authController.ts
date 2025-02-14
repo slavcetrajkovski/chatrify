@@ -11,16 +11,18 @@ export const register = async (req: Request, res: Response) => {
 
   try {
     const hashedPassword = await bcrypt.hash(password, SALT_ROUNDS);
-    console.log(hashedPassword);
+
     const result = await pool.query(
       "INSERT INTO users (username, email, password) VALUES ($1, $2, $3) RETURNING *",
       [username, email, hashedPassword]
     );
 
     const user = result.rows[0];
-    res.status(201).json({ user });
+    let token = "";
+    let finalResult = { ...user, token };
+    res.status(201).json({ user, finalResult });
   } catch (error) {
-    res.status(500).json({ message: "Failed to register user" });
+    res.status(500).json({ message: "Failed to register user", error: error });
   }
 };
 
