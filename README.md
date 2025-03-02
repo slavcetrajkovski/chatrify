@@ -1,38 +1,38 @@
-# Chatrify - Мобилна Апликација за Комуникација во Реално Време и AI-Помогнати Разговори
+# Chatrify - Mobile App for Real-Time Communication and AI-Assisted Conversations
 
-## Преглед
-Chatrify е мобилна апликација која овозможува беспрекорно комуницирање во реално време помеѓу корисниците. Апликацијата е изградена со **Flutter** за frontend и **Node.js** за backend, и овозможува брзо испраќање на пораки преку WebSockets, што значи дека пораките се испраќаат и примаат веднаш. Дополнително, апликацијата ја интегрира **OpenAI** за генерирање на прашања или теми за разговор, кои го олеснуваат започнувањето на интересни дискусии во самата апликација.
+## Overview
+Chatrify is a mobile application that enables seamless real-time communication between users. Built with **Flutter** for the frontend and **Node.js** for the backend, the app ensures fast message delivery using **WebSockets**, allowing messages to be sent and received instantly. Additionally, Chatrify integrates **OpenAI** to generate conversation starters or topics, making it easier to initiate engaging discussions within the app.
 
-За складирање на податоци користевме **PostgreSQL** како база на податоци.
+For data storage, we used **PostgreSQL** as the database.
 
-## Изработиле:
-1. **Предраг Стерјоски** - 213220
-2. **Славко Трајковски** - 213243
-3. **Миа Стевковска** - 213172
+## Developed by:
+1. **Predrag Sterjoski** - 213220
+2. **Slavko Trajkovski** - 213243
+3. **Mia Stevkovska** - 213172
 
-## Функционалности
+## Features
 
-- **Комуникација во Реално Време**: Корисниците можат да испраќаат и примаат пораки во реално време преку WebSockets, што ја прави комуникацијата брза и ефикасна.
+- **Real-Time Communication**: Users can send and receive messages instantly through **WebSockets**, ensuring fast and efficient messaging.
   
-- **Интеграција со OpenAI**: Апликацијата користи OpenAI за генерирање на прашања или теми за разговор, што помага да се започне интересен разговор и да се одржи динамиката на чатовите.
+- **OpenAI Integration**: The app uses **OpenAI** to generate conversation starters, helping users begin interesting discussions and maintain chat engagement.
   
-- **Управување со Контакти**: Корисниците можат да додаваат и управуваат со своите контакти, овозможувајќи персонализирана комуникација.
+- **Contact Management**: Users can add and manage their contacts, enabling a more personalized communication experience.
   
-- **Автентикација и Авторизација на Корисници**: Сигурен процес за регистрација и логирање на корисниците, обезбедувајќи дека само овластени корисници можат да комуницираат со своите контакти.
+- **User Authentication & Authorization**: A secure registration and login process ensures that only authorized users can communicate with their contacts.
   
-- **Историја на Пораки**: Пораките се складираат во PostgreSQL база на податоци и корисниците можат да ја прегледуваат својата историја на пораки.
+- **Message History**: Messages are stored in a PostgreSQL database, allowing users to access their chat history anytime.
 
-## Технолошка Архитектура
+## Tech Stack
 
 - **Frontend**: 
-  - Flutter (за развој на мобилни апликации)
+  - Flutter (for mobile app development)
   
 - **Backend**:
-  - Node.js (логика на серверот и API)
-  - WebSockets (за комуникација во реално време)
+  - Node.js (server logic and API)
+  - WebSockets (for real-time communication)
   
-- **База на податоци**:
-  - PostgreSQL (за складирање на податоци за корисниците и пораките)
+- **DAtabase**:
+  - PostgreSQL (for storing user data and messages)
   
-- **Интеграција со AI**:
-  - OpenAI (за генерирање на теми за разговор)
+- **AI integration**:
+  - OpenAI (for generating conversation topics)
