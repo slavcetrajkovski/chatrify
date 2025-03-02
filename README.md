@@ -31,7 +31,7 @@ For data storage, we used **PostgreSQL** as the database.
   - Node.js (server logic and API)
   - WebSockets (for real-time communication)
   
-- **DAtabase**:
+- **Database**:
   - PostgreSQL (for storing user data and messages)
   
 - **AI integration**:
